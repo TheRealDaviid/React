@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour {
     public float addForceSide = 500f;
     public string Direction = "X";
 
-    public SerialPort sp = new SerialPort("COM5", 115200, Parity.None, 8, StopBits.One);
+    public SerialPort sp = new SerialPort("COM1", 115200, Parity.None, 8, StopBits.One);
 
     void Start () {
         //Open the serial port       
