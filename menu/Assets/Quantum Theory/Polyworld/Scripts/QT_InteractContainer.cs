@@ -16,7 +16,7 @@ public class QT_InteractContainer : MonoBehaviour
     private Animator Anim;
     private bool isTriggered = false;
 
-   
+
     public Text uiCanvasText;
     private Canvas uiCanvas;
     private List<Collider> colliders = new List<Collider>();
