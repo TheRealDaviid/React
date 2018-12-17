@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour {
     public float addForceSide = 2000f;
     public string Direction = "X";
 
-    public SerialPort sp = new SerialPort("COM5", 115200, Parity.None, 8, StopBits.One);
+    public SerialPort sp = new SerialPort("COM9", 115200, Parity.None, 8, StopBits.One);
 
     void Start () {
         //Open the serial port       
@@ -36,11 +36,11 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (Direction.ToString().Contains("D"))
         {
-            rb.AddForce(0, 0, -20 * Time.deltaTime, ForceMode.VelocityChange);
+            rb.AddForce(0, 0, -addForce * Time.deltaTime, ForceMode.VelocityChange);
         }
         if (Direction.ToString().Contains("U"))
         {
-            rb.AddForce(0, 0, 20 * Time.deltaTime, ForceMode.VelocityChange);
+            rb.AddForce(0, 0, addForce * Time.deltaTime, ForceMode.VelocityChange);
         }
         if (Direction.ToString().Contains("R"))
         {
