@@ -1,2 +1,53 @@
-Base path: C:/Program Files/Unity/Editor/Data
+Base path: D:/Unity/Editor/Data
+Cmd: initializeCompiler
+Cmd: preprocess
+  insize=1128 outsize=1410 ok=1
+Cmd: preprocess
+  insize=2727 outsize=2724 ok=1
+Cmd: preprocess
+  insize=3021 outsize=3319 ok=1
+Cmd: preprocess
+  insize=2856 outsize=3303 ok=1
+Cmd: preprocess
+  insize=3071 outsize=3326 ok=1
+Cmd: preprocess
+  insize=3361 outsize=3537 ok=1
+Cmd: preprocess
+  insize=2851 outsize=3307 ok=1
+Cmd: preprocess
+  insize=2347 outsize=297 ok=1
+Cmd: preprocess
+  insize=994 outsize=1354 ok=1
+Cmd: preprocess
+  insize=2996 outsize=3356 ok=1
+Cmd: preprocess
+  insize=3378 outsize=3544 ok=1
+Cmd: preprocess
+  insize=33233 outsize=4986 ok=1
+Cmd: preprocess
+  insize=3013 outsize=3364 ok=1
+Cmd: preprocess
+  insize=3395 outsize=2939 ok=1
+Cmd: preprocess
+  insize=993 outsize=1356 ok=1
+Cmd: preprocess
+  insize=1026 outsize=1650 ok=1
+Cmd: preprocess
+  insize=2996 outsize=3360 ok=1
+Cmd: preprocess
+  insize=33005 outsize=4792 ok=1
+Cmd: preprocess
+  insize=2929 outsize=3299 ok=1
+Cmd: preprocess
+  insize=1103 outsize=1409 ok=1
+Cmd: preprocess
+  insize=3368 outsize=3542 ok=1
+Cmd: preprocess
+  insize=3162 outsize=2989 ok=1
+Cmd: preprocess
+  insize=3199 outsize=3367 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at Assets/Quantum Theory/Polyworld/Shaders/VertexColors/IBL/VertexLitIBL.cginc(71): undeclared identifier '_Color'\nCompiling Vertex program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
+  api=4 type=0 insize=680 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
 Cmd: initializeCompiler
