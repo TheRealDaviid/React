@@ -12,6 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 1 Lobby.unity
     guid: 9c9724405297bb443b46d5f94109af35
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/CarDrive.unity
     guid: adcdfc0aa0f3a5044a3702708515ed2a
+=======
+    path: Assets/Scenes/Level1Multiplayer.unity
+    guid: 7d984b412dafb5d49874d994c04c29e7
+>>>>>>> parent of ee2aa4bb... mutliplayer 2
   m_configObjects: {}
