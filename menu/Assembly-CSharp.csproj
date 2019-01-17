@@ -67,10 +67,7 @@
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\QT_SurfaceNoise.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\Utility Scripts\MeshCombineUtility.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\Utility Scripts\QT_MeshCombineUtility.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\script\db.cs" />
->>>>>>> parent of 086c9783... ka
     <Compile Include="Assets\Singleplayer.cs" />
     <Compile Include="Assets\Singleplayerscript\followPlayer.cs" />
     <Compile Include="Assets\Singleplayerscript\MoveCar.cs" />
@@ -365,12 +362,9 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
-<<<<<<< HEAD
-=======
     </Reference>
     <Reference Include="Mono.Data.Sqlite">
       <HintPath>C:/Users/chris/Desktop/React/menu/Assets/Mono.Data.Sqlite.dll</HintPath>
->>>>>>> parent of 086c9783... ka
     </Reference>
     <Reference Include="TextMeshPro-2017.3-Editor">
       <HintPath>C:/Users/chris/Desktop/React/menu/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
