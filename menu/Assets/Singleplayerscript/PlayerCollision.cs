@@ -19,7 +19,6 @@ public class PlayerCollision : MonoBehaviour
         }
         if ( collisionInfo.collider.name.StartsWith("Cube"))
         {
-            Debug.Log("steps");
             this.GetComponent<Rigidbody>().position += stepup;
         }
         //if (collisionInfo.collider.tag == "Finish")

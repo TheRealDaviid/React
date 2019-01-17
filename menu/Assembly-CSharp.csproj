@@ -60,17 +60,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\followPlayer.cs" />
     <Compile Include="Assets\MainMenu.cs" />
-    <Compile Include="Assets\PlayerCollision.cs" />
-    <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\QT_InteractContainer.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\QT_LightFlicker.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\QT_PolyWorldTerrain.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\QT_SurfaceNoise.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\Utility Scripts\MeshCombineUtility.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\Utility Scripts\QT_MeshCombineUtility.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\script\db.cs" />
+>>>>>>> parent of 086c9783... ka
     <Compile Include="Assets\Singleplayer.cs" />
+    <Compile Include="Assets\Singleplayerscript\followPlayer.cs" />
+    <Compile Include="Assets\Singleplayerscript\MoveCar.cs" />
+    <Compile Include="Assets\Singleplayerscript\PlayerCollision.cs" />
+    <Compile Include="Assets\Singleplayerscript\PlayerMovement.cs" />
+    <Compile Include="Assets\Singleplayerscript\Quest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -359,6 +365,12 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+<<<<<<< HEAD
+=======
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>C:/Users/chris/Desktop/React/menu/Assets/Mono.Data.Sqlite.dll</HintPath>
+>>>>>>> parent of 086c9783... ka
     </Reference>
     <Reference Include="TextMeshPro-2017.3-Editor">
       <HintPath>C:/Users/chris/Desktop/React/menu/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
