@@ -1,8 +1,1 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Level 1 Lobby.unity
-=======
-- path: Assets/Scenes/Menu.unity
->>>>>>> parent of f53e975b... Multiplayer
-  isLoaded: 1
-  isActive: 1
+sceneSetups: []
