@@ -19522,6 +19522,7 @@ MonoBehaviour:
   jump: 32
   player: {fileID: 1299311757}
   runSpeed: 8
+  jumpforce: 15
 --- !u!114 &1299311759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19534,7 +19535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb2d8e756387a445be1b9c7ee25161c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 700
+  m_JumpForce: 2
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -30044,6 +30045,7 @@ MonoBehaviour:
   jump: 273
   player: {fileID: 2017011493}
   runSpeed: 8
+  jumpforce: 15
 --- !u!114 &2017011495
 MonoBehaviour:
   m_ObjectHideFlags: 0

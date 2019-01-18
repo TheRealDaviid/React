@@ -16,6 +16,7 @@ public class PlayerMovement2D : MonoBehaviour
     private float m_JumpForce = 400f;
 
     public float runSpeed = 40f;
+    public float jumpforce = 0f;
     private bool m_FacingRight = true;
      bool jump1 = false;
     // Start is called before the first frame update
@@ -54,12 +55,12 @@ public class PlayerMovement2D : MonoBehaviour
 
         if (Input.GetKeyDown(jump))
         {
-            player.velocity = new Vector2(player.velocity.x, m_JumpForce);
+            player.velocity = new Vector2(player.velocity.x, jumpforce);
             if (m_Grounded && jump1)
             {
                 // Add a vertical force to the player.
                 m_Grounded = false;
-                player.AddForce(new Vector2(0f, m_JumpForce));
+                player.AddForce(new Vector2(0f, jumpforce));
             }
         }
         //horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed; // A = -1 , D = 1 //InputManager Settings
