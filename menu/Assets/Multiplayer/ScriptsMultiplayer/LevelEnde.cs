@@ -14,7 +14,12 @@ public class LevelEnde : MonoBehaviour
         {
             SceneManager.LoadScene("Menu");
         }
-        
+
+        if (collision.tag == "Player 2")
+        {
+            SceneManager.LoadScene("Menu");
+        }
+
 
     }
 }
