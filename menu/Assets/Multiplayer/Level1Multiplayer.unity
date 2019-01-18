@@ -801,7 +801,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b32d987616c33034791859c722a26055, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e3c2f8db43b102849a28be3478726fbb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -18711,7 +18711,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -604241685
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8e160a2a620644cd6afef9119dad1093, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19517,12 +19517,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30ff0b9720192941ab9f28d173ebf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1299311759}
   left: 97
   right: 100
   jump: 32
   player: {fileID: 1299311757}
-  jumpforce: 15
   runSpeed: 8
 --- !u!114 &1299311759
 MonoBehaviour:
@@ -21206,7 +21204,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -604241685
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8e160a2a620644cd6afef9119dad1093, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30041,12 +30039,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30ff0b9720192941ab9f28d173ebf1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 2017011495}
   left: 276
   right: 275
   jump: 273
   player: {fileID: 2017011493}
-  jumpforce: 15
   runSpeed: 8
 --- !u!114 &2017011495
 MonoBehaviour:
@@ -32302,6 +32298,11 @@ PrefabInstance:
       propertyPath: levelmanager
       value: 
       objectReference: {fileID: 1465280961}
+    - target: {fileID: 2512213402765713108, guid: 749053336829039409657f09459af80f,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 749053336829039409657f09459af80f, type: 3}
 --- !u!1001 &7490637281662236616
