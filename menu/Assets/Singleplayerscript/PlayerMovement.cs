@@ -54,6 +54,10 @@ public class PlayerMovement : MonoBehaviour {
         {
             rb.AddForce(0, 0, 0, ForceMode.VelocityChange);
         }
+        if (Direction.ToString().Contains("S"))
+        {
+            rb.AddForce(0, 2f, 0, ForceMode.VelocityChange);
+        }
 
 
         sp.BaseStream.Flush();
