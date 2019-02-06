@@ -1313,6 +1313,7 @@ MonoBehaviour:
   aufgabe: {fileID: 0}
   rechnung: {fileID: 0}
   player: {fileID: 0}
+  erg: 0
 --- !u!1 &87276373
 GameObject:
   m_ObjectHideFlags: 0
@@ -19477,6 +19478,7 @@ GameObject:
   - component: {fileID: 1299311757}
   - component: {fileID: 1299311763}
   - component: {fileID: 1299311762}
+  - component: {fileID: 1299311764}
   m_Layer: 9
   m_Name: Player 1
   m_TagString: Player
@@ -19661,6 +19663,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14214087, y: 0.21850723}
   m_EdgeRadius: 0
+--- !u!114 &1299311764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299311756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02af02df4b56753468521739103ba18e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1605698354}
+  highScore: {fileID: 1596588134}
+  ergebnis: {fileID: 711699734}
+  aufgabe: {fileID: 1527172911}
+  rechnung: {fileID: 993507246}
+  player: {fileID: 1299311756}
+  erg: 0
 --- !u!1 &1306679178
 GameObject:
   m_ObjectHideFlags: 0
