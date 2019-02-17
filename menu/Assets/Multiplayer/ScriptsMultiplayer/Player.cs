@@ -33,20 +33,22 @@ public class Player : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
 
-
-        if (collision.tag == "Checkpoint" || collision.tag == "Enemy")
+        if (collision.tag == "Player")
         {
-            player.SetActive(false);
+            Debug.Log("Collision");
+            Debug.Log(aufgabe.activeSelf);
             aufgabe.SetActive(true);
-            int random1 = Random.Range(1, 90);
-            int random2 = Random.Range(1, 90);
+            Debug.Log(aufgabe.activeSelf);
+            int random1 = Random.Range(1, 50);
+            int random2 = Random.Range(1, 50);
             
-            int randomoperator = Random.Range(1, 2);
+            int randomoperator = Random.Range(1, 3);
 
             if (randomoperator == 1)
             {
                 erg = random1 + random2;
                 rechnung.text = random1 + " + " + random2;
+                Debug.Log(erg);
             }
             if (randomoperator == 2)
             {
@@ -54,11 +56,13 @@ public class Player : MonoBehaviour
                 {
                     erg = random1 - random2;
                     rechnung.text = random1 + " - " + random2;
+                    Debug.Log(erg);
                 }
                 else
                 {
                     erg = random2 - random1;
                     rechnung.text = random2 + " - " + random1;
+                    Debug.Log(erg);
                 }
             }
             if (scoreCounter > PlayerPrefs.GetInt("Highscore"))
@@ -68,7 +72,7 @@ public class Player : MonoBehaviour
             }
 
 
-
+            
 
 
         }
@@ -87,8 +91,11 @@ public class Player : MonoBehaviour
             scoreCounter--;
             scoreText.text = "Score: " + scoreCounter.ToString(); //geht auch ohne ToString() ist aber sicherer
         }
+        Debug.Log(aufgabe.activeSelf);
         aufgabe.SetActive(false);
-        player.SetActive(true);
+
+
+       
     }
 }
 

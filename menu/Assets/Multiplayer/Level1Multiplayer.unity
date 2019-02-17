@@ -1307,12 +1307,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02af02df4b56753468521739103ba18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  highScore: {fileID: 0}
-  ergebnis: {fileID: 0}
-  aufgabe: {fileID: 0}
-  rechnung: {fileID: 0}
-  player: {fileID: 0}
+  scoreText: {fileID: 1605698354}
+  highScore: {fileID: 1596588134}
+  ergebnis: {fileID: 711699734}
+  aufgabe: {fileID: 200342125}
+  rechnung: {fileID: 993507246}
+  player: {fileID: 1299311756}
   erg: 0
 --- !u!1 &87276373
 GameObject:
@@ -5856,10 +5856,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.7, y: 2.78, z: -3.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1397503703}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &396627496
 GameObject:
@@ -6214,7 +6213,7 @@ PrefabInstance:
     - target: {fileID: 2512213402765713115, guid: 749053336829039409657f09459af80f,
         type: 3}
       propertyPath: m_Name
-      value: Enemy 1 (1)
+      value: Enemy 2
       objectReference: {fileID: 0}
     - target: {fileID: 2512213402765713115, guid: 749053336829039409657f09459af80f,
         type: 3}
@@ -6707,7 +6706,7 @@ Transform:
   - {fileID: 1444472813}
   - {fileID: 219262182}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &496739007
 GameObject:
@@ -7138,7 +7137,7 @@ Transform:
   - {fileID: 1100115558}
   - {fileID: 104002355}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &542176894
 GameObject:
@@ -7705,7 +7704,7 @@ GameObject:
   - component: {fileID: 584085432}
   - component: {fileID: 584085431}
   m_Layer: 0
-  m_Name: Checkpoint (1)
+  m_Name: Checkpoint 2
   m_TagString: Checkpoint
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -7724,6 +7723,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelmanager: {fileID: 1465280961}
+  scoreText: {fileID: 1605698354}
+  highScore: {fileID: 1596588134}
+  ergebnis: {fileID: 711699734}
+  aufgabe: {fileID: 1527172911}
+  rechnung: {fileID: 993507246}
+  player: {fileID: 0}
+  erg: 0
 --- !u!61 &584085432
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8392,7 +8398,7 @@ Transform:
   - {fileID: 90404017}
   - {fileID: 2116267271}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &618461041
 GameObject:
@@ -11126,7 +11132,7 @@ Transform:
   - {fileID: 1107293430}
   - {fileID: 206440320}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &834533467
 GameObject:
@@ -13393,8 +13399,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.7, y: 2.78, z: -3.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1267786408}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14203,7 +14208,7 @@ Transform:
   - {fileID: 1380307777}
   - {fileID: 1660439650}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1041373017
 GameObject:
@@ -18646,85 +18651,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1267786407
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1267786408}
-  - component: {fileID: 1267786409}
-  m_Layer: 0
-  m_Name: back
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1267786408
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267786407}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.203, y: 1.88, z: 17.27}
-  m_LocalScale: {x: 7.20539, y: 6.2457476, z: 4.0321155}
-  m_Children: []
-  m_Father: {fileID: 995130966}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1267786409
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267786407}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -604241685
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8e160a2a620644cd6afef9119dad1093, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.84, y: 2.4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1277603009
 GameObject:
   m_ObjectHideFlags: 0
@@ -19478,7 +19404,6 @@ GameObject:
   - component: {fileID: 1299311757}
   - component: {fileID: 1299311763}
   - component: {fileID: 1299311762}
-  - component: {fileID: 1299311764}
   m_Layer: 9
   m_Name: Player 1
   m_TagString: Player
@@ -19663,25 +19588,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14214087, y: 0.21850723}
   m_EdgeRadius: 0
---- !u!114 &1299311764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299311756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02af02df4b56753468521739103ba18e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 1605698354}
-  highScore: {fileID: 1596588134}
-  ergebnis: {fileID: 711699734}
-  aufgabe: {fileID: 1527172911}
-  rechnung: {fileID: 993507246}
-  player: {fileID: 1299311756}
-  erg: 0
 --- !u!1 &1306679178
 GameObject:
   m_ObjectHideFlags: 0
@@ -21185,11 +21091,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397503702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.203, y: 1.88, z: 17.27}
-  m_LocalScale: {x: 7.20539, y: 6.2457476, z: 4.0321155}
+  m_LocalPosition: {x: 17.246, y: 5.102, z: 13.83}
+  m_LocalScale: {x: 19.050955, y: 12.390373, z: 4.0321155}
   m_Children: []
-  m_Father: {fileID: 385793623}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1397503704
 SpriteRenderer:
@@ -21540,7 +21446,7 @@ Transform:
   - {fileID: 593116518}
   - {fileID: 1166588834}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444472812
 GameObject:
@@ -22963,7 +22869,7 @@ Transform:
   m_Children:
   - {fileID: 200342129}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1534601434
 GameObject:
@@ -25430,7 +25336,7 @@ Transform:
   - {fileID: 375543669}
   - {fileID: 1115174004}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1708862492
 GameObject:
@@ -26719,7 +26625,7 @@ Transform:
   - {fileID: 1074257688}
   - {fileID: 1610218458}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1836179630
 GameObject:
@@ -27787,7 +27693,7 @@ Transform:
   - {fileID: 918086772}
   - {fileID: 131425862}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1883307128
 GameObject:
@@ -27973,7 +27879,7 @@ Transform:
   m_LocalScale: {x: 4.807308, y: 4.807308, z: 4.807308}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1890926087
 MonoBehaviour:
@@ -30161,7 +30067,7 @@ Transform:
   - {fileID: 9257481}
   - {fileID: 1100927239}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2018977904
 GameObject:
@@ -32405,5 +32311,30 @@ PrefabInstance:
       propertyPath: levelmanager
       value: 
       objectReference: {fileID: 1465280961}
+    - target: {fileID: 7490637282404960876, guid: c6b5343b73427994eaa239f977b2416e,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1605698354}
+    - target: {fileID: 7490637282404960876, guid: c6b5343b73427994eaa239f977b2416e,
+        type: 3}
+      propertyPath: highScore
+      value: 
+      objectReference: {fileID: 1596588134}
+    - target: {fileID: 7490637282404960876, guid: c6b5343b73427994eaa239f977b2416e,
+        type: 3}
+      propertyPath: aufgabe
+      value: 
+      objectReference: {fileID: 1527172911}
+    - target: {fileID: 7490637282404960876, guid: c6b5343b73427994eaa239f977b2416e,
+        type: 3}
+      propertyPath: rechnung
+      value: 
+      objectReference: {fileID: 993507246}
+    - target: {fileID: 7490637282404960876, guid: c6b5343b73427994eaa239f977b2416e,
+        type: 3}
+      propertyPath: ergebnis
+      value: 
+      objectReference: {fileID: 711699734}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6b5343b73427994eaa239f977b2416e, type: 3}

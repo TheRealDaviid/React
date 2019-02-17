@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyCollide : MonoBehaviour
 {
     public LevelManager levelmanager;
-
+    public Player collideplayer;
     public Vector3 startPos;
     public Vector3 newPos;
     public Vector3 tempPos;
@@ -48,6 +48,7 @@ public class EnemyCollide : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" )
         {
+            
             levelmanager.respawnOrNot("Player");
             Debug.Log("Enemy Colide");
 
