@@ -1310,7 +1310,7 @@ MonoBehaviour:
   scoreText: {fileID: 1605698354}
   highScore: {fileID: 1596588134}
   ergebnis: {fileID: 711699734}
-  aufgabe: {fileID: 200342125}
+  aufgabe: {fileID: 1527172911}
   rechnung: {fileID: 993507246}
   player: {fileID: 1299311756}
   erg: 0

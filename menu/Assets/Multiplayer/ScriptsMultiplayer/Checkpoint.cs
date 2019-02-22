@@ -12,10 +12,13 @@ public class Checkpoint : MonoBehaviour
     public Text highScore;
 
     public InputField ergebnis;
-    public GameObject aufgabe;
+    [SerializeField]
+    private GameObject aufgabe;
     public Text rechnung;
     public GameObject player;
     public int erg = 0;
+
+    private Canvas canvas;
 
     // Start is called before the first frame update
     void Start()
@@ -26,12 +29,18 @@ public class Checkpoint : MonoBehaviour
         //lade akt. Highscore
         highScore.text = "Highscore: " + PlayerPrefs.GetInt("Highscore").ToString();
         //Playerprefs funktioniert wie Bibliothek
+
+        canvas = aufgabe.GetComponent<Canvas>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKey(KeyCode.B))
+            aufgabe.SetActive(true);
+        if (Input.GetKey(KeyCode.N))
+            aufgabe.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -54,7 +63,7 @@ public class Checkpoint : MonoBehaviour
         {
             
             Debug.Log("Collision");
-            Debug.Log(aufgabe.activeSelf);
+            Debug.Log(aufgabe.activeInHierarchy);
             aufgabe.SetActive(true);
             Debug.Log(aufgabe.activeSelf);
             int random1 = Random.Range(1, 50);
