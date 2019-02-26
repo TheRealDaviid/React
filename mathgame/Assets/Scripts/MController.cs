@@ -13,7 +13,7 @@ public class MController : MonoBehaviour
         if (cam == null)
         {
             cam = Camera.main; //if no camera exists, use the main camera of the scene
-        }
+        }       
         Vector3 upperCorner = new Vector3(Screen.width, Screen.height, 0.0f);
         Vector3 targetWidth = cam.ScreenToWorldPoint(upperCorner); //Welt begrenzen so, dass gameobject nicht welt velässt
         maxField = targetWidth.x;
@@ -31,7 +31,7 @@ public class MController : MonoBehaviour
               );
             Quaternion spawnRotation = Quaternion.identity;
             Instantiate(apple, spawnPosition, spawnRotation);
-            yield return new WaitForSeconds(Random.Range(0.5f,1.0f));
+            yield return new WaitForSeconds(Random.Range(1.0f,2.0f));
         }      
     }
 }

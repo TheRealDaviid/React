@@ -5,18 +5,12 @@ using UnityEngine.UI;
 using TMPro;
 public class appletext : MonoBehaviour
 {
-    public GameObject apple;
-    
     public TextMeshProUGUI text;
+    public Random random1;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        text.transform.position = Camera.main.WorldToScreenPoint(apple.transform.position);
+        int random1 = Random.Range(1, 10);
+        text.text = random1.ToString();
     }
 }
