@@ -6,6 +6,7 @@ using System.Data;
 using Mono.Data.Sqlite;
 
 
+
 public class Highscore : MonoBehaviour {
     
     string conn;
@@ -23,11 +24,14 @@ public class Highscore : MonoBehaviour {
 
         DateTime theDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
         
-           
+           // {MM:DD:YY}
         string Zeit = theDate.ToString();
 
         conn = "URI=file:" + Application.dataPath + "/Plugins/Reactdb.db"; //Path to database
-      //   InsertScore("#5", 187,  Zeit, 5, 10, 2, 2);
+        
+
+       // InsertScore("888", 125, Zeit, 5, 10, 2, 2);
+       //  InsertScore("120", 187,  Zeit, 5, 10, 2, 2);
       //  getScore();
        // DeleteScore(5);
         ShowScores();
