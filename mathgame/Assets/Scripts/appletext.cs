@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class appletext : MonoBehaviour
+
+public class Appletext : MonoBehaviour
 {
     public TextMeshProUGUI text;
-    public Random random1;
-    // Start is called before the first frame update
+    public int wert;
+    public int i;
+
     void Start()
     {
-        int random1 = Random.Range(1, 10);
-        text.text = random1.ToString();
+        wert = SumScript.Count();
+        SetText();
+    }
+
+    void SetText()
+    {
+        text.text = wert.ToString();
     }
 }

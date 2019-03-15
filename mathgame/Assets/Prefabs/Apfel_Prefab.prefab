@@ -271,9 +271,9 @@ GameObject:
   - component: {fileID: 3453271707818749118}
   - component: {fileID: 5157581389597494269}
   - component: {fileID: 8060666118214498553}
-  - component: {fileID: 5276959088363105452}
+  - component: {fileID: 6917715900411624148}
   m_Layer: 0
-  m_Name: simple-apple
+  m_Name: Apfel_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -379,7 +379,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 11.955
---- !u!114 &5276959088363105452
+--- !u!114 &6917715900411624148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -392,3 +392,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 8800359881822628872}
+  wert: 0
+  i: 0

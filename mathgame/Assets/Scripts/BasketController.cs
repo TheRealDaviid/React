@@ -7,7 +7,7 @@ public class BasketController : MonoBehaviour
     public Camera cam;
     new Rigidbody2D rigidbody;
     private float maxField;
-    // Start is called before the first frame update
+
     void Start()
     {
         if (cam == null)
@@ -19,8 +19,7 @@ public class BasketController : MonoBehaviour
         maxField = targetWidth.x;
         rigidbody = this.gameObject.GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
+   
     void FixedUpdate()
     {
         Vector3 rawPosition = cam.ScreenToWorldPoint(Input.mousePosition);
