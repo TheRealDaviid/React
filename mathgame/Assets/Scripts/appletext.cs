@@ -7,6 +7,7 @@ using TMPro;
 public class Appletext : MonoBehaviour
 {
     public TextMeshProUGUI text;
+    
     public int wert;
     public int i;
 

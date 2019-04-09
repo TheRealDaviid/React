@@ -32,7 +32,7 @@ public class MController : MonoBehaviour
               );
             Quaternion spawnRotation = Quaternion.identity;
             Instantiate(apple, spawnPosition, spawnRotation);
-            yield return new WaitForSeconds(Random.Range(1.0f, 2.0f));
+            yield return new WaitForSeconds(Random.Range(2.0f, 3.0f));
         }
     }
 }
