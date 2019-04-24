@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    private int scoreCounter; //private damit nicht manipulierbar
+    public static int scoreCounter = 0; //private damit nicht manipulierbar
+    public static int rightCounter = 0; //private damit nicht manipulierbar
+    public static int falseCounter = 0; //private damit nicht manipulierbar
     public Text scoreText;
-    public Text highScore;
+   
 
     public InputField ergebnis;
     public GameObject aufgabe;
@@ -15,12 +18,10 @@ public class Player : MonoBehaviour
     public GameObject player;
 
     public int erg = 0;
+    public static System.DateTime theDate = new System.DateTime(System.DateTime.Today.Year, System.DateTime.Today.Month, System.DateTime.Today.Day);
     void Start()
     {
-        scoreCounter = 0;
-        //lade akt. Highscore
-        highScore.text = "Highscore: " + PlayerPrefs.GetInt("Highscore").ToString();
-        //Playerprefs funktioniert wie Bibliothek
+       
 
     }
 
@@ -33,70 +34,80 @@ public class Player : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.tag == "Player")
-        {
-            Debug.Log("Collision");
-            Debug.Log(aufgabe.activeSelf);
-            aufgabe.SetActive(true);
-            Debug.Log(aufgabe.activeSelf);
-            int random1 = Random.Range(1, 50);
-            int random2 = Random.Range(1, 50);
-            
-            int randomoperator = Random.Range(1, 3);
+            if (collision.gameObject.tag == "Checkpoint")
+            {
 
-            if (randomoperator == 1)
-            {
-                erg = random1 + random2;
-                rechnung.text = random1 + " + " + random2;
-                Debug.Log(erg);
-            }
-            if (randomoperator == 2)
-            {
-                if (random1 > random2)
+                Debug.Log("Collision");
+                Debug.Log(aufgabe.activeInHierarchy);
+                aufgabe.SetActive(true);
+                Debug.Log(aufgabe.activeSelf);
+                int random1 = Random.Range(1, 50);
+                int random2 = Random.Range(1, 50);
+
+                int randomoperator = Random.Range(1, 3);
+
+                if (randomoperator == 1)
                 {
-                    erg = random1 - random2;
-                    rechnung.text = random1 + " - " + random2;
+                    erg = random1 + random2;
+                    rechnung.text = random1 + " + " + random2;
                     Debug.Log(erg);
                 }
-                else
+                if (randomoperator == 2)
                 {
-                    erg = random2 - random1;
-                    rechnung.text = random2 + " - " + random1;
-                    Debug.Log(erg);
+                    if (random1 > random2)
+                    {
+                        erg = random1 - random2;
+                        rechnung.text = random1 + " - " + random2;
+                        Debug.Log(erg);
+                    }
+                    else
+                    {
+                        erg = random2 - random1;
+                        rechnung.text = random2 + " - " + random1;
+                        Debug.Log(erg);
+                    }
                 }
+                
+
+
             }
-            if (scoreCounter > PlayerPrefs.GetInt("Highscore"))
-            {
-                PlayerPrefs.SetInt("Highscore", scoreCounter);
-                highScore.text = "Highscore: " + PlayerPrefs.GetInt("Highscore").ToString();
-            }
-
-
-            
-
 
         }
-
-    }
     public void Close()
     {
 
         if (erg == int.Parse(ergebnis.text))
         {
             scoreCounter++;
+            rightCounter++;
             scoreText.text = "Score: " + scoreCounter.ToString(); //geht auch ohne ToString() ist aber sicherer
+            Debug.Log(scoreCounter);
         }
         else
         {
             scoreCounter--;
+            falseCounter++;
             scoreText.text = "Score: " + scoreCounter.ToString(); //geht auch ohne ToString() ist aber sicherer
+            Debug.Log(scoreCounter);
         }
         Debug.Log(aufgabe.activeSelf);
         aufgabe.SetActive(false);
-
-
        
+
     }
+
+    public static void LevelEnd(int name)
+    {
+        Debug.Log("affe");
+        HighscoreMultiplayer.Start();
+        HighscoreMultiplayer.InsertScore((HighscoreMultiplayer.GetLastID() + 1).ToString(), scoreCounter, theDate.ToString(), rightCounter,  falseCounter, name, 2);
+        Debug.Log("affe8888888888");
+
+    }
+
 }
+    
+
+
 
    

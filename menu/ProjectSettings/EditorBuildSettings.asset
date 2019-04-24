@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CarDrive.unity
     guid: adcdfc0aa0f3a5044a3702708515ed2a
+  - enabled: 1
+    path: Assets/singleplayer minigame/Scenes/SampleScene.unity
+    guid: d21bd4c956c34ed4b876d5f942319ef6
   m_configObjects: {}

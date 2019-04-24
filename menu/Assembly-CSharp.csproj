@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_0;UNITY_2018_3;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_0;UNITY_2018_3;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -67,10 +67,12 @@
     <Compile Include="Assets\Multiplayer\ScriptsMultiplayer\DieWhenFallDown.cs" />
     <Compile Include="Assets\Multiplayer\ScriptsMultiplayer\EnemyCollide.cs" />
     <Compile Include="Assets\Multiplayer\ScriptsMultiplayer\followPlayerMultiplayer.cs" />
+    <Compile Include="Assets\Multiplayer\ScriptsMultiplayer\HighscoreMultiplayer.cs" />
     <Compile Include="Assets\Multiplayer\ScriptsMultiplayer\LevelEnde.cs" />
     <Compile Include="Assets\Multiplayer\ScriptsMultiplayer\LevelManager.cs" />
     <Compile Include="Assets\Multiplayer\ScriptsMultiplayer\Player.cs" />
     <Compile Include="Assets\Multiplayer\ScriptsMultiplayer\PlayerMovement2D.cs" />
+    <Compile Include="Assets\Multiplayer\ScriptsMultiplayer\PM21.cs" />
     <Compile Include="Assets\Multiplayer\ScriptsMultiplayer\Splitscreen.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\QT_InteractContainer.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\QT_LightFlicker.cs" />
@@ -78,13 +80,27 @@
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\QT_SurfaceNoise.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\Utility Scripts\MeshCombineUtility.cs" />
     <Compile Include="Assets\Quantum Theory\Polyworld\Scripts\Utility Scripts\QT_MeshCombineUtility.cs" />
-    <Compile Include="Assets\script\db.cs" />
+    <Compile Include="Assets\script\dbApple.cs" />
+    <Compile Include="Assets\singleplayer minigame\Scripts\Appletext.cs" />
+    <Compile Include="Assets\singleplayer minigame\Scripts\BasketController.cs" />
+    <Compile Include="Assets\singleplayer minigame\Scripts\DestroyOnContact.cs" />
+    <Compile Include="Assets\singleplayer minigame\Scripts\HighscoreApple.cs" />
+    <Compile Include="Assets\singleplayer minigame\Scripts\HighScoreManager.cs" />
+    <Compile Include="Assets\singleplayer minigame\Scripts\HighScoreScript.cs" />
+    <Compile Include="Assets\singleplayer minigame\Scripts\MController.cs" />
+    <Compile Include="Assets\singleplayer minigame\Scripts\PlayerMovementApple.cs" />
+    <Compile Include="Assets\singleplayer minigame\Scripts\SumScript.cs" />
     <Compile Include="Assets\Singleplayer.cs" />
     <Compile Include="Assets\Singleplayerscript\followPlayer.cs" />
     <Compile Include="Assets\Singleplayerscript\MoveCar.cs" />
     <Compile Include="Assets\Singleplayerscript\PlayerCollision.cs" />
     <Compile Include="Assets\Singleplayerscript\PlayerMovement.cs" />
     <Compile Include="Assets\Singleplayerscript\Quest.cs" />
+    <Compile Include="Assets\Stats\script\db.cs" />
+    <Compile Include="Assets\Stats\script\GetData.cs" />
+    <Compile Include="Assets\Stats\script\Highscore.cs" />
+    <Compile Include="Assets\Stats\script\HighScoreManager.cs" />
+    <Compile Include="Assets\Stats\script\HighScoreScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -122,6 +138,8 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLDiffuseTex.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsReflectiveUnity5_Linear.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
@@ -131,11 +149,14 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsReflectiveAlphaUnity5.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\PolyWorld_TerrainTree.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\PolyWorldSurfaceTexture_Gamma.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsUnity5.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\PolyWorldSurface_Gamma.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\PolyWorldSurfaceTexture_Linear.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsDiffuseTexUnity5_Linear.shader" />
@@ -149,21 +170,33 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\NotoSans - License.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsAlphaUnity5.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsEmissiveUnity5.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLEmissive.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsReflectiveUnity5.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLReflective.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\SurfaceNoiseGamma.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsEmissiveUnity5_Linear.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\QT_Cubemaps.cginc" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsUnity5_Linear.shader" />
     <None Include="Assets\Quantum Theory\Polyworld\Shaders\QT_3xTreeRenderTex.shader" />
+    <None Include="Assets\singleplayer minigame\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/chris/Desktop/React/menu/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
@@ -375,7 +408,10 @@
       <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Data.Sqlite">
-      <HintPath>C:/Users/chris/Desktop/React/menu/Assets/Mono.Data.Sqlite.dll</HintPath>
+      <HintPath>C:/Users/chris/Desktop/React/menu/Assets/singleplayer minigame/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:/Users/chris/Desktop/React/menu/Assets/singleplayer minigame/System.Data.dll</HintPath>
     </Reference>
     <Reference Include="TextMeshPro-2017.3-Editor">
       <HintPath>C:/Users/chris/Desktop/React/menu/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>

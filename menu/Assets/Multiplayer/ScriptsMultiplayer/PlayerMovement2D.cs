@@ -10,12 +10,16 @@ public class PlayerMovement2D : MonoBehaviour
     public KeyCode right;
     public KeyCode jump;
 
+    public Animator animator;
+
     public Rigidbody2D player;
     float horizontalMove = 0f;
     private bool m_Grounded;
     private float m_JumpForce = 400f;
 
-    public float runSpeed = 40f;
+    
+
+    public float runSpeed = 0f;
     public float jumpforce = 0f;
     private bool m_FacingRight = true;
      bool jump1 = false;
@@ -28,8 +32,14 @@ public class PlayerMovement2D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(player.velocity.y);
+       
+        animator.SetFloat("Speed", Mathf.Abs(runSpeed));
+        
+        horizontalMove = player.velocity.y;
         if (Input.GetKey(left))
         {
+            runSpeed = 8f;
             player.velocity = new Vector2(-runSpeed, player.velocity.y);
             
             if (runSpeed > 0 && m_FacingRight)
@@ -37,9 +47,12 @@ public class PlayerMovement2D : MonoBehaviour
                 // ... flip the player.
                 Flip();
             }
+           
+
         }
         else if (Input.GetKey(right))
         {
+            runSpeed = 8f;
             player.velocity = new Vector2(runSpeed, player.velocity.y);
             
             if (-runSpeed < 0 && !m_FacingRight)
@@ -47,10 +60,12 @@ public class PlayerMovement2D : MonoBehaviour
                 // ... flip the player.
                 Flip();
             }
+            
         }
         else 
         {
-            player.velocity = new Vector2(0, player.velocity.y);
+            runSpeed = 0f;
+            player.velocity = new Vector2(runSpeed, player.velocity.y);
         }
 
         if (Input.GetKeyDown(jump))
@@ -58,11 +73,13 @@ public class PlayerMovement2D : MonoBehaviour
             player.velocity = new Vector2(player.velocity.x, jumpforce);
             if (m_Grounded && jump1)
             {
+                runSpeed = 0f;
                 // Add a vertical force to the player.
                 m_Grounded = false;
-                player.AddForce(new Vector2(0f, jumpforce));
+                player.AddForce(new Vector2(runSpeed, jumpforce));
             }
         }
+        
         //horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed; // A = -1 , D = 1 //InputManager Settings
         //Debug.Log(Input.GetAxisRaw("Horizontal"));
         //if (Input.GetButtonDown("Jump"))

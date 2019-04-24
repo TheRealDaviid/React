@@ -3572,9 +3572,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 117326481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77d7c2be205584f4eaee18c40b446895, type: 3}
+  m_Script: {fileID: 11500000, guid: e37e9c67e51f2394189690d8e4bb0971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: 
 --- !u!1 &117469971
 GameObject:
   m_ObjectHideFlags: 0
@@ -5162,9 +5163,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 171398235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77d7c2be205584f4eaee18c40b446895, type: 3}
+  m_Script: {fileID: 11500000, guid: e37e9c67e51f2394189690d8e4bb0971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: SampleScene
 --- !u!1 &173780215
 GameObject:
   m_ObjectHideFlags: 0
@@ -19376,6 +19378,7 @@ GameObject:
   - component: {fileID: 618825865}
   - component: {fileID: 618825867}
   - component: {fileID: 618825866}
+  - component: {fileID: 618825868}
   m_Layer: 0
   m_Name: SceneTerrain-Town_x2y2LOD0
   m_TagString: Untagged
@@ -19442,6 +19445,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618825864}
   m_Mesh: {fileID: 4300000, guid: d1fb7d29aa8d9d845ba9b40a42f96553, type: 2}
+--- !u!114 &618825868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618825864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e37e9c67e51f2394189690d8e4bb0971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 
 --- !u!1 &622495942
 GameObject:
   m_ObjectHideFlags: 0
@@ -26445,7 +26461,6 @@ GameObject:
   - component: {fileID: 837166258}
   - component: {fileID: 837166264}
   - component: {fileID: 837166263}
-  - component: {fileID: 837166265}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -26574,18 +26589,6 @@ MonoBehaviour:
   stepup: {x: 0, y: 0.15, z: 0}
   stepup2: {x: 0, y: -0.2, z: 0}
   call: 0
---- !u!114 &837166265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837166257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1f16105ff84c424397812638b5eef1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &837994477
 GameObject:
   m_ObjectHideFlags: 0
